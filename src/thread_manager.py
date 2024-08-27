@@ -8,12 +8,15 @@ class SentimentAnalyzer:
         self.vader_result = None
         self.finbert_result = None
 
+    # thread function to compute sentiment analysis
     def vader_thread(self):
         self.vader_result = analyze_vader(self.text)
 
+    # thread functon to compute financial sentiment analysis
     def finbert_thread(self):
         self.finbert_result = analyze_finbert(self.text)
 
+    # creates a thread for each sentiment analyses and averages values 
     def run_analysis(self):
         t1 = threading.Thread(target=self.vader_thread)
         t2 = threading.Thread(target=self.finbert_thread)
@@ -24,13 +27,13 @@ class SentimentAnalyzer:
         t1.join()
         t2.join()
 
+        print("Sentiment Result: ", self.vader_result)
+        print("Financial Result: ", self.finbert_result)
+        print("Combined: ", self.combine_results())
+
         return self.combine_results()
 
-    def combine_results(self, vader_weight=0.5, finbert_weight=0.5):
-        combined = {
-            'pos': (self.vader_result['pos'] * vader_weight) + (self.finbert_result['pos'] * finbert_weight),
-            'neg': (self.vader_result['neg'] * vader_weight) + (self.finbert_result['neg'] * finbert_weight),
-            'neu': (self.vader_result['neu'] * vader_weight) + (self.finbert_result['neu'] * finbert_weight),
-            'compound': (self.vader_result['compound'] * vader_weight) + (self.finbert_result['compound'] * finbert_weight)
-        }
+    # computes weighted average of models given parameters 
+    def combine_results(self, vader_weight=0.25, finbert_weight=0.75):
+        combined = (self.vader_result * vader_weight) + (self.finbert_result * finbert_weight)
         return combined
