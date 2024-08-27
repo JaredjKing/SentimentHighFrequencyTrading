@@ -13,7 +13,7 @@ HFTAlgoProject/<br>
 ├── tests/<br>
 &nbsp;│&nbsp;&nbsp;&nbsp;├── test_data_collection.py&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Unit tests for data collection<br>
 &nbsp;│&nbsp;&nbsp;&nbsp;├── test_thread_manager.py&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Unit tests for threading and combinational logic<br>
-&nbsp;│&nbsp;&nbsp;&nbsp;├── test_finance_sentiment.py&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp;// Unit tests for financial sentiment logic<br>
+&nbsp;│&nbsp;&nbsp;&nbsp;├── test_finance_sentiment.py&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Unit tests for financial sentiment logic<br>
 &nbsp;│&nbsp;&nbsp;&nbsp;├── test_sentiment_analysis.py&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Unit tests for sentiment analysis logic<br>
 ├── config/<br>
 &nbsp;│&nbsp;&nbsp;&nbsp;├── api_keys.json&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// API keys and configuration (gitignored)<br>
