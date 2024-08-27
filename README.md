@@ -18,9 +18,9 @@ HFTAlgoProject/<br>
 ├── config/<br>
 &nbsp;│&nbsp;&nbsp;&nbsp;├── api_keys.json&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// API keys and configuration (gitignored)<br>
 &nbsp;│&nbsp;&nbsp;&nbsp;├── config.py&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Configuration management (e.g., API key loading)<br>
-└── README.md&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Project overview and instructions<br>
-└── requirements.txt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// required dependincies<br>
-└── run.py&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// run project<br>
+└─ README.md&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Project overview and instructions<br>
+└─ requirements.txt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// required dependincies<br>
+└─ run.py&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// run project<br>
 
 ## Features
 - **Data Collection**: Fetches financial news articles from APIs like NewsAPI, Alpha Vantage, or Finnhub.
