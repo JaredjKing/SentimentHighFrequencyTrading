@@ -6,18 +6,18 @@ This project is a High-Frequency Trading (HFT) system that leverages sentiment a
 ## Project Structure
 HFTAlgoProject/<br>
 ├── src/<br>
-│&nbsp;&nbsp;&nbsp;├── data_collection.py&nbsp;&nbsp;&nbsp;// Handles data collection from financial news APIs<br>
-│&nbsp;&nbsp;&nbsp;├── thread_manager.py&nbsp;&nbsp;&nbsp;// Manages multithreading for sentiment analysis<br>
-│&nbsp;&nbsp;&nbsp;├── financial_sentiment.py&nbsp;&nbsp;&nbsp;// Financial sentiment analysis using FinBERT<br>
-│&nbsp;&nbsp;&nbsp;├── vader_sentiment.py&nbsp;&nbsp;&nbsp;// General sentiment analysis using VADER<br>
-├── tests/<br>
-│&nbsp;&nbsp;&nbsp;├── test_data_collection.py&nbsp;&nbsp;&nbsp;// Unit tests for data collection<br>
-│&nbsp;&nbsp;&nbsp;├── test_thread_manager.py&nbsp;&nbsp;&nbsp;// Unit tests for threading and combinational logic<br>
-│&nbsp;&nbsp;&nbsp;├── test_finance_sentiment.py&nbsp;&nbsp;&nbsp;;// Unit tests for financial sentiment logic<br>
-│&nbsp;&nbsp;&nbsp;├── test_sentiment_analysis.py&nbsp;&nbsp;&nbsp;// Unit tests for sentiment analysis logic<br>
+&nbsp;│&nbsp;&nbsp;&nbsp;├── data_collection.py&nbsp;&nbsp;&nbsp;// Handles data collection from financial news APIs<br>
+&nbsp;│&nbsp;&nbsp;&nbsp;├── thread_manager.py&nbsp;&nbsp;&nbsp;// Manages multithreading for sentiment analysis<br>
+&nbsp;│&nbsp;&nbsp;&nbsp;├── financial_sentiment.py&nbsp;&nbsp;&nbsp;// Financial sentiment analysis using FinBERT<br>
+&nbsp;│&nbsp;&nbsp;&nbsp;├── vader_sentiment.py&nbsp;&nbsp;&nbsp;// General sentiment analysis using VADER<br>
+&nbsp;├── tests/<br>
+&nbsp;│&nbsp;&nbsp;&nbsp;├── test_data_collection.py&nbsp;&nbsp;&nbsp;// Unit tests for data collection<br>
+&nbsp;│&nbsp;&nbsp;&nbsp;├── test_thread_manager.py&nbsp;&nbsp;&nbsp;// Unit tests for threading and combinational logic<br>
+&nbsp;│&nbsp;&nbsp;&nbsp;├── test_finance_sentiment.py&nbsp;&nbsp;&nbsp;;// Unit tests for financial sentiment logic<br>
+&nbsp;│&nbsp;&nbsp;&nbsp;├── test_sentiment_analysis.py&nbsp;&nbsp;&nbsp;// Unit tests for sentiment analysis logic<br>
 ├── config/<br>
-│&nbsp;&nbsp;&nbsp;├── api_keys.json&nbsp;&nbsp;&nbsp;// API keys and configuration (gitignored)<br>
-│&nbsp;&nbsp;&nbsp;├── config.py&nbsp;&nbsp;&nbsp;// Configuration management (e.g., API key loading)<br>
+&nbsp;│&nbsp;&nbsp;&nbsp;├── api_keys.json&nbsp;&nbsp;&nbsp;// API keys and configuration (gitignored)<br>
+&nbsp;│&nbsp;&nbsp;&nbsp;├── config.py&nbsp;&nbsp;&nbsp;// Configuration management (e.g., API key loading)<br>
 └── README.md&nbsp;&nbsp;&nbsp;// Project overview and instructions<br>
 └── requirements.txt&nbsp;&nbsp;&nbsp;// required dependincies<br>
 └── run.py&nbsp;&nbsp;&nbsp;// run project<br>
